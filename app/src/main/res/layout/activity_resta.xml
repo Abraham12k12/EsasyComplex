@@ -6,46 +6,384 @@
     android:layout_height="match_parent"
     tools:context=".Resta">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondoopera"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btnResBino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="56dp"
-        android:text="Calcular"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bevan"
+        android:backgroundTint="#FAC16F"
+        android:text="@string/Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btnResTrigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
-        android:layout_marginEnd="56dp"
-        android:text="Calcular"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bevan"
+        android:backgroundTint="#FAC16F"
+        android:text="@string/Calcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/btnResBino" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btnResPolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:text="Calcular"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FAC16F"
+        android:fontFamily="@font/bevan"
+        android:text="@string/Calcular"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
-        app:layout_constraintVertical_bias="0.289" />
+        app:layout_constraintTop_toBottomOf="@+id/btnResTrigo" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingrese los datos"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/ingrese_unicamente_los_valores"
+        android:textSize="18sp"
+        android:textColor="#DA880F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/ResCajaABin"
+        android:layout_width="75dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/ResCajaBBin"
+        android:layout_width="81dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/ResCajaM1Trigo"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <EditText
+        android:id="@+id/ResCajaM2Trigo"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <EditText
+        android:id="@+id/ResCajaM1Polar"
+        android:layout_width="72dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <EditText
+        android:id="@+id/ResCajaAn2Trigo"
+        android:layout_width="91dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <EditText
+        android:id="@+id/ResCajaAn1Trigo"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <EditText
+        android:id="@+id/ResCajaM2Polar"
+        android:layout_width="74dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <EditText
+        android:id="@+id/ResCajaAn1Polar"
+        android:layout_width="87dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <EditText
+        android:id="@+id/ResCajaAn2Polar"
+        android:layout_width="82dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.782" />
+
+    <EditText
+        android:id="@+id/ResCajaCBin"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <EditText
+        android:id="@+id/ResCajaDBin"
+        android:layout_width="78dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <TextView
+        android:id="@+id/j1"
+        android:layout_width="25dp"
+        android:layout_height="32dp"
+        android:text="@string/j1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/j2"
+        android:layout_width="20dp"
+        android:layout_height="34dp"
+        android:text="@string/j2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/cis1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CIS1"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <TextView
+        android:id="@+id/cis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CIS2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/ej1"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:text="@string/e_j1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <TextView
+        android:id="@+id/ej2"
+        android:layout_width="46dp"
+        android:layout_height="39dp"
+        android:text="@string/e_j2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <TextView
+        android:id="@+id/textSolResTrigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:textColor="#9A6415"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582"
+        tools:text="Resultado ResTrigo" />
+
+    <TextView
+        android:id="@+id/textSolResPolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:textColor="#9A6415"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        tools:text="Resultado ResPolar" />
+
+    <TextView
+        android:id="@+id/textSolResBin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:textColor="#9A6415"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326"
+        tools:text="Resultado ResBin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

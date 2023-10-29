@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasyComplex</string>
+    <string name="bienvenidos_a_easycomplex">Welcome to EasyComplex</string>
+    <string name="operaciones_basicas">Basic Operations</string>
+    <string name="convertir">Transform</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="Calcular">Calculate</string>
+    <string name="ingrese_los_datos">Enter the data</string>
+    <string name="suma">Adition</string>
+    <string name="resta">Substraction</string>
+    <string name="multiplicaci_n">Multiplication</string>
+    <string name="divisi_n">Division</string>
+    <string name="forma_binomica">Binomial Form</string>
+    <string name="forma_polar">Polar Form</string>
+    <string name="valor_r">r-Value</string>
+    <string name="angulo">Angle</string>
+    <string name="trigonometrica">Trigonometric</string>
+    <string name="forma_trigonometrica">Trigonometric Form</string>
+    <string name="num_real">Num. Real</string>
+    <string name="num_imaginario">Num. Imaginary</string>
+    <string name="binomica">Binomial</string>
+    <string name="polar">Polar</string>
+    <string name="que_forma_conoces">What format do you know?</string>
+    <string name="valor_requrido">Enter a value</string>
+    <string name="Ingrese_valores">Please! Enter the missing values</string>
+    <string name="ecuacion">equation</string>
+    <string name="conocer_ecuacion">know equation</string>
+    <string name="para_conocer_las_ecuaciones_haga_click_en_los_botones">To know the equations click on the buttons</string>
+    <string name="calcular_modulo_r_y_angulo_0">Calculate Module(r) and Angle(0)</string>
+    <string name="calcular_real_a_e_imaginario_b">Calculate Real and Imaginary</string>
+    <string name="ingrese_unicamente_los_valores">Enter only the values</string>
+</resources>

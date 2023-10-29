@@ -4,31 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     tools:context=".BinomicaConversion">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Binomica"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="730dp"
+        android:background="@drawable/fondoconvertir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textBinomica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/forma_binomica"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnConverBino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convertir"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="@font/bevan"
+        android:text="@string/convertir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279"
+        app:layout_constraintVertical_bias="0.819"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/realnumber"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:hint="@string/num_real"
+        android:inputType="numberDecimal | numberSigned"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <EditText
+        android:id="@+id/imaginario"
+        android:layout_width="141dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:hint="@string/num_imaginario"
+        android:inputType="numberDecimal |numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/ResultadoTrigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/eagle_lake"
+        android:text="@string/forma_trigonometrica"
+        android:textColor="#2979FF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ResultadoPolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/j"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <TextView
+        android:id="@+id/ResultadoPolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eagle_lake"
+        android:text="@string/forma_polar"
+        android:textColor="#2979FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <TextView
+        android:id="@+id/j"
+        android:layout_width="31dp"
+        android:layout_height="45dp"
+        android:text="@string/j"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/tvresultTrigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:textColor="#3D5AFE"
+        app:layout_constraintBottom_toTopOf="@+id/ResultadoPolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultadoTrigo"
+        app:layout_constraintVertical_bias="0.519"
+        tools:text="Resultado Trigonometrica" />
+
+    <TextView
+        android:id="@+id/tvresulpolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/acme"
+        android:textColor="#3D5AFE"
+        app:layout_constraintBottom_toTopOf="@+id/ConverBino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultadoPolar"
+        tools:text="Resultado Polar" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

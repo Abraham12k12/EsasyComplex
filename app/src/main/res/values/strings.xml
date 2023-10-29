@@ -1,6 +1,49 @@
 <resources>
-    <string name="app_name">EsasyComplex</string>
+    <string name="app_name">EasyComplex</string>
     <string name="bienvenidos_a_easycomplex">Bienvenidos a EasyComplex</string>
     <string name="operaciones_basicas">Operaciones Basicas</string>
-    <string name="convertir" />
+    <string name="convertir">Convertir</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="Calcular">Calcular</string>
+    <string name="ingrese_los_datos">Ingrese los datos</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicaci_n">Multiplicación</string>
+    <string name="divisi_n">División</string>
+    <string name="forma_binomica">Forma Binomica</string>
+    <string name="forma_polar">Forma Polar</string>
+    <string name="valor_r">Valor-r</string>
+    <string name="angulo">Angulo</string>
+    <string name="cis" translatable="false">CIS</string>
+    <string name="trigonometrica">Trigonometrica</string>
+    <string name="forma_trigonometrica">Forma Trigonometrica</string>
+    <string name="num_real">Num. Real</string>
+    <string name="num_imaginario">Num. Imaginario</string>
+    <string name="binomica">Binomica</string>
+    <string name="polar">Polar</string>
+    <string name="que_forma_conoces">¿Que forma conoces?</string>
+    <string name="j" translatable="false">j</string>
+    <string name="a_jb" translatable="false">a+jb</string>
+    <string name="r_cos0_jsin0_o_rcis0" translatable="false">r(cos0+jsin0) o rCiS0</string>
+    <string name="re_j0" translatable="false">re^j0</string>
+    <string name="j1" translatable="false">j1</string>
+    <string name="j2" translatable="false">j2</string>
+    <string name="CIS1" translatable="false">CIS1\n</string>
+    <string name="CIS2" translatable="false">CIS2</string>
+    <string name="e_j1" translatable="false">e^j1</string>
+    <string name="e_j2" translatable="false">e^j2</string>
+    <string name="valor_requrido">Ingrese un valor\n</string>
+    <string name="Ingrese_valores">Favor de Ingresar los valores faltantes\n</string>
+    <string name="mostrarBino" translatable="false">%1$s +j %2$s</string>
+    <string name="mostrarTrigo" translatable="false">%1$s CIS %2$s</string>
+    <string name="mostrarPolar" translatable="false">%1$s e^j %2$s</string>
+    <string name="ecuacion">¿Ecuacion?</string>
+    <string name="conocer_ecuacion">Conocer Ecuacion</string>
+    <string name="para_conocer_las_ecuaciones_haga_click_en_los_botones">Para conocer las ecuaciones haga click en los botones</string>
+    <string name="easycomplex" translatable="false">EasyComplex</string>
+    <string name="por" translatable="false">Por</string>
+    <string name="velasquez_soto_josue_abraham" translatable="false">Velasquez Soto Josue Abraham</string>
+    <string name="calcular_modulo_r_y_angulo_0">Calcular Modulo(r) y Angulo(0)</string>
+    <string name="calcular_real_a_e_imaginario_b">Calcular Real(a) e Imaginario(b)</string>
+    <string name="ingrese_unicamente_los_valores">Ingrese unicamente los valores</string>
 </resources>
